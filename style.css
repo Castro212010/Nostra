@@ -1,0 +1,289 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+}
+
+/*navbar*/
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   padding: 10px;
+   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.navlinks {
+   display: flex;
+   column-gap: 20px;
+   margin-top: 10px;
+}
+
+.navlink a {
+   text-decoration: none;
+   color: darkblue;
+}
+
+.navlink a:hover {
+   text-decoration: underline;
+   color: darkblue;
+}
+
+.navmenu {
+   display: none;
+   margin-top: 15px;
+}
+
+/*mobile side navbar*/
+.sidenav {
+   background-color: darkblue;
+   width: 50%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 20px;
+   color: white;
+   display: none;
+}
+
+.sidenavlink {
+   margin-bottom: 30px;
+}
+
+.sidenavlinks a {
+   text-decoration: none;
+   color: white;
+}
+
+.sidenavlinks a:hover {
+   text-decoration: underline;
+   color: white;
+}
+
+/*header*/
+.header {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   padding: 60px;
+}
+
+.headerbtn {
+   padding: 13px;
+   margin: 10px;
+   background-color: darkblue;
+   color: white;
+   cursor: pointer;
+   border-style: none;
+}
+
+/*Service*/
+.Service {
+   padding: 20px;
+   margin: 10px;
+}
+
+.serviceo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.servicet {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.servicet div {
+   background-color: grey;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+/*newarrival*/
+.newarrival {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: warp;
+}
+
+.arrivalcontainer {
+   position: relative;
+   flex-direction: 40%;
+   margin-top: 30px;
+}
+
+.arrivalcontainer img {
+   border-radius: 10px;
+   border-style: none;
+}
+
+.newarrival button {
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   margin-top: 10px;
+   color: darkblue;
+   position: absolute;
+   top: 50%;
+   left: 18%;
+   border-radius: 10px;
+   border-style: none;
+}
+
+.news {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.news input {
+   padding: 11px;
+   width: 80vw;
+   margin-bottom: 10px;
+   border: solid black 3px;
+}
+
+.news button {
+   padding: 10px;
+   margin-top: 10px;
+   background-color: darkblue;
+   color: white;
+   border-radius: 10px;
+}
+
+.footer {
+   margin-top: 20px;
+   padding: 40px;
+   background-color: darkblue;
+   color: white;
+}
+
+.product-s {
+   margin-top: 20px;
+}
+
+.product-se {
+   width: 80%;
+   border: solid black 2px;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   margin: auto;
+}
+
+.product-se input {
+   border: none;
+   background-color: transparent;
+   width: 100%;
+}
+
+.product-se input:focus {
+   outline: none;
+}
+
+.product {
+   padding: 20px;
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.product-b {
+   text-align: center;
+   flex-basis: 20%;
+}
+
+.product-b img {
+   border-radius: 10px;
+}
+
+.contactb {
+   color: white;
+   width: 80%;
+   height: 80%;
+   margin: 10px;
+   background-color: darkblue;
+   margin: auto;
+   margin-top: 30px;
+}
+
+.contactb input {
+   width: 96%;
+   padding: 10px;
+   border: none;
+   background-color: white;
+   margin-bottom: 10px;
+   border-radius: 10px;
+}
+
+.contactb textarea {
+   width: 39%;
+   padding: 30%;
+   border: none;
+   border-radius: 10px;
+   margin-bottom: 5px;
+}
+
+.box {
+   padding: 30px;
+}
+
+.contactb h3 {
+   margin-bottom: 5px;
+}
+
+.contactb button {
+   padding: 10px;
+   background-color: blue;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   margin-top: 5px;
+}
+
+
+
+/*mobil view*/
+@media screen and (max-width:600px) {
+.navmenu {
+   display: block;
+}
+
+.navlinks {
+   display: none;
+}
+
+.headerimg {
+   display: none;
+}
+
+.serviceo {
+   display: none;
+}
+
+.servicet {
+   flex-direction: column;
+}
+
+.newarrival {
+   flex-direction: column;
+   text-align: center;
+}
+.newarrival button {
+   left: 28%;
+}
+
+}
+
