@@ -10,8 +10,5 @@ function closesidenav()
    sidenav.style.display="none"
 }
 
-function collection() {
-   
-}
 
 
